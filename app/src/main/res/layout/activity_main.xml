@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context="com.example.mimsoft.oshiordertracer.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/backrepeat"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/oshi"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:text="@string/ordertrck"
+       android:layout_marginTop="40dp"
+        android:textColor="#000"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        />
+      <EditText
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp"
+          android:hint="@string/order"
+          android:id="@+id/order"
+          android:inputType="number"
+          android:layout_marginBottom="30dp"
+          android:imeOptions="actionSend"
+          />
+      <EditText
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:hint="@string/phone"
+          android:id="@+id/phone"
+          android:inputType="phone"
+          android:imeOptions="actionSend"/>
+
+      <Button
+          android:layout_width="150dp"
+          android:layout_height="30dp"
+          android:layout_marginTop="40dp"
+          android:text="@string/btn"
+          android:textColor="#fff"
+          android:background="#206266"
+          android:onClick="submit"/>
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="80dp"
+          android:layout_marginTop="40dp"
+          android:src="@drawable/cart"/>
+    </LinearLayout>
+</ScrollView>
+
